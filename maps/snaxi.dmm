@@ -26806,7 +26806,8 @@
 "bjR" = (
 /obj/machinery/camera{
 	c_tag = "AI Upload Foyer";
-	dir = 8
+	dir = 8;
+	failure_chance = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/simulated/floor{
@@ -27145,7 +27146,8 @@
 "bkJ" = (
 /obj/machinery/camera{
 	c_tag = "AI Core West";
-	dir = 8
+	dir = 8;
+	failure_chance = 0
 	},
 /obj/machinery/power/apc{
 	dir = 4;
@@ -27754,7 +27756,8 @@
 "blV" = (
 /obj/machinery/camera{
 	c_tag = "AI Core Center";
-	dir = 8
+	dir = 8;
+	failure_chance = 0
 	},
 /obj/machinery/atmospherics/unary/vent_pump{
 	dir = 4;
@@ -92151,6 +92154,10 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/camera{
+	c_tag = "Central Medical Hallway East";
+	dir = 8
+	},
 /turf/simulated/floor,
 /area/hallway/primary/starboard{
 	name = "\improper Central Medical Hallway"
@@ -95885,7 +95892,8 @@
 "lJF" = (
 /obj/machinery/camera{
 	c_tag = "AI Upload";
-	dir = 4
+	dir = 4;
+	failure_chance = 0
 	},
 /obj/machinery/power/apc{
 	dir = 8;
@@ -98080,7 +98088,8 @@
 	},
 /obj/machinery/camera{
 	c_tag = "AI Upload Access";
-	dir = 4
+	dir = 4;
+	failure_chance = 0
 	},
 /obj/structure/cable{
 	d1 = 1;
@@ -101847,6 +101856,16 @@
 	},
 /turf/simulated/floor/plating,
 /area/turret_protected/tcomms_control_room)
+"vwR" = (
+/obj/machinery/camera{
+	c_tag = "Central Medical Hallway East";
+	dir = 6;
+	pixel_x = -22
+	},
+/turf/simulated/floor,
+/area/hallway/primary/starboard{
+	name = "\improper Central Medical Hallway"
+	})
 "vxo" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 1
@@ -145142,7 +145161,7 @@ rTJ
 rTJ
 rTJ
 boI
-aVF
+vwR
 aVF
 boI
 aAo

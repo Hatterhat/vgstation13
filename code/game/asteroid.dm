@@ -1,6 +1,6 @@
 var/global/list/spawned_surprises = list()
 
-var/global/max_secret_rooms = 3
+var/global/max_secret_rooms = 5
 
 /* Le broken.
 proc/admin_spawn_room_at_pos()

@@ -108,6 +108,7 @@
 		/obj/item/stack/sheet/mineral/uranium,
 		/obj/item/stack/sheet/mineral/diamond,
 		/obj/item/stack/sheet/mineral/clown,
+		/obj/item/stack/sheet/mineral/phazon,
 		/obj/item/stack/sheet/plasteel,
 		/obj/item/stack/rods,
 	)
@@ -116,6 +117,25 @@
 		for(var/res in resources)
 			var/obj/item/stack/R = new res(src)
 			R.amount = R.max_amount
+
+/obj/structure/closet/syndicate/resources/everything/priv
+	desc = "It's a storage closet. A faint label on the outside says \"METAPHYSICAL STORAGE - DO NOT USE\"."
+
+/obj/structure/closet/syndicate/resources/everything/priv/spawn_contents()
+	. = ..()
+	var/list/extras = list(
+		/obj/item/weapon/switchtool/holo,
+		/obj/item/weapon/storage/bluespace_crystal,
+		/obj/item/bluespace_crystal/flawless,
+		/obj/item/weapon/stock_parts/micro_laser/high/ultra/giga,
+		/obj/item/weapon/stock_parts/capacitor/adv/super/ultra,
+		/obj/item/weapon/stock_parts/manipulator/nano/pico/femto,
+		/obj/item/weapon/stock_parts/scanning_module/adv/phasic/bluespace,
+		/obj/item/device/multitool/omnitool,
+	)
+	for(var/i = 0, i<5, i++)
+		for(var/obj/item in extras)
+			new item(src)
 
 /obj/structure/closet/vox_raiders
 	name = "vox armory closet"

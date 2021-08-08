@@ -6,7 +6,7 @@
 //2. add the map's name to the vault_map_names list
 //3. the game will handle the rest
 
-#define MINIMUM_VAULT_AMOUNT 5 //Amount of guaranteed vault spawns
+#define MINIMUM_VAULT_AMOUNT 10 //Amount of guaranteed vault spawns
 #define MAXIMUM_VAULT_AMOUNT 15
 
 #define MAX_VAULT_WIDTH  80 //Vaults bigger than that have a slight chance of overlapping with other vaults
@@ -89,7 +89,7 @@
 /proc/generate_asteroid_secrets()
 	var/list/list_of_surprises = get_map_element_objects(/datum/map_element/mining_surprise)
 
-	var/surprise_number = rand(1, min(list_of_surprises.len, max_secret_rooms))
+	var/surprise_number = rand(3, min(list_of_surprises.len, max_secret_rooms))
 
 	var/result = populate_area_with_vaults(/area/mine/unexplored, list_of_surprises, surprise_number, filter_function=/proc/asteroid_can_be_placed)
 

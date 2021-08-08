@@ -38817,6 +38817,12 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/machinery/requests_console{
+	department = "Xenobiology";
+	departmentType = 2;
+	name = "Xenobiology Requests Console";
+	pixel_x = 30
+	},
 /turf/simulated/floor{
 	icon_state = "white"
 	},

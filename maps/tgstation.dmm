@@ -68563,9 +68563,9 @@
 /area/science/xenobiology)
 "cyZ" = (
 /obj/machinery/requests_console{
-	department = "Science";
+	department = "Xenobiology";
 	departmentType = 2;
-	name = "Science Requests Console";
+	name = "Xenobiology Requests Console";
 	pixel_y = 30
 	},
 /obj/machinery/camera{
